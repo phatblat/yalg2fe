@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F8DB45241CF7EA290000799F /* yalg2fe.h in Headers */ = {isa = PBXBuildFile; fileRef = F8DB45231CF7EA290000799F /* yalg2fe.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F8DB452B1CF7EA290000799F /* yalg2fe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8DB45201CF7EA290000799F /* yalg2fe.framework */; };
+		F8DB452B1CF7EA290000799F /* git2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8DB45201CF7EA290000799F /* git2.framework */; };
 		F8DB45301CF7EA290000799F /* yalg2feTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DB452F1CF7EA290000799F /* yalg2feTests.swift */; };
 		F8DB453E1CF7F1C90000799F /* libgit2-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F8DB453D1CF7F1C90000799F /* libgit2-ios.a */; };
 		F8DB45D71CF7F2A50000799F /* git2.h in Headers */ = {isa = PBXBuildFile; fileRef = F8DB458C1CF7F2A50000799F /* git2.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -113,10 +113,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F8DB45201CF7EA290000799F /* yalg2fe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = yalg2fe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8DB45201CF7EA290000799F /* git2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = git2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8DB45231CF7EA290000799F /* yalg2fe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = yalg2fe.h; sourceTree = "<group>"; };
 		F8DB45251CF7EA290000799F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F8DB452A1CF7EA290000799F /* yalg2feTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = yalg2feTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8DB452A1CF7EA290000799F /* git2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = git2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8DB452F1CF7EA290000799F /* yalg2feTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yalg2feTests.swift; sourceTree = "<group>"; };
 		F8DB45311CF7EA290000799F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8DB453D1CF7F1C90000799F /* libgit2-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libgit2-ios.a"; sourceTree = "<group>"; };
@@ -233,7 +233,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8DB452B1CF7EA290000799F /* yalg2fe.framework in Frameworks */,
+				F8DB452B1CF7EA290000799F /* git2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,8 +255,8 @@
 		F8DB45211CF7EA290000799F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F8DB45201CF7EA290000799F /* yalg2fe.framework */,
-				F8DB452A1CF7EA290000799F /* yalg2feTests.xctest */,
+				F8DB45201CF7EA290000799F /* git2.framework */,
+				F8DB452A1CF7EA290000799F /* git2Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -504,9 +504,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		F8DB451F1CF7EA290000799F /* yalg2fe */ = {
+		F8DB451F1CF7EA290000799F /* git2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F8DB45341CF7EA290000799F /* Build configuration list for PBXNativeTarget "yalg2fe" */;
+			buildConfigurationList = F8DB45341CF7EA290000799F /* Build configuration list for PBXNativeTarget "git2" */;
 			buildPhases = (
 				F8DB451B1CF7EA290000799F /* Sources */,
 				F8DB451C1CF7EA290000799F /* Frameworks */,
@@ -517,14 +517,14 @@
 			);
 			dependencies = (
 			);
-			name = yalg2fe;
+			name = git2;
 			productName = yalg2fe;
-			productReference = F8DB45201CF7EA290000799F /* yalg2fe.framework */;
+			productReference = F8DB45201CF7EA290000799F /* git2.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		F8DB45291CF7EA290000799F /* yalg2feTests */ = {
+		F8DB45291CF7EA290000799F /* git2Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F8DB45371CF7EA290000799F /* Build configuration list for PBXNativeTarget "yalg2feTests" */;
+			buildConfigurationList = F8DB45371CF7EA290000799F /* Build configuration list for PBXNativeTarget "git2Tests" */;
 			buildPhases = (
 				F8DB45261CF7EA290000799F /* Sources */,
 				F8DB45271CF7EA290000799F /* Frameworks */,
@@ -535,9 +535,9 @@
 			dependencies = (
 				F8DB452D1CF7EA290000799F /* PBXTargetDependency */,
 			);
-			name = yalg2feTests;
+			name = git2Tests;
 			productName = yalg2feTests;
-			productReference = F8DB452A1CF7EA290000799F /* yalg2feTests.xctest */;
+			productReference = F8DB452A1CF7EA290000799F /* git2Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -558,7 +558,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F8DB451A1CF7EA290000799F /* Build configuration list for PBXProject "yalg2fe" */;
+			buildConfigurationList = F8DB451A1CF7EA290000799F /* Build configuration list for PBXProject "git2" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -570,8 +570,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F8DB451F1CF7EA290000799F /* yalg2fe */,
-				F8DB45291CF7EA290000799F /* yalg2feTests */,
+				F8DB451F1CF7EA290000799F /* git2 */,
+				F8DB45291CF7EA290000799F /* git2Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -614,7 +614,7 @@
 /* Begin PBXTargetDependency section */
 		F8DB452D1CF7EA290000799F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F8DB451F1CF7EA290000799F /* yalg2fe */;
+			target = F8DB451F1CF7EA290000799F /* git2 */;
 			targetProxy = F8DB452C1CF7EA290000799F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -714,8 +714,6 @@
 		F8DB45351CF7EA290000799F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
-				CLANG_ENABLE_MODULES = NO;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -734,8 +732,8 @@
 				);
 				MODULEMAP_FILE = yalg2fe/module.modulemap;
 				OTHER_LDFLAGS = "-all_load";
-				PRODUCT_BUNDLE_IDENTIFIER = at.phatbl.yalg2fe;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = at.phatbl.git2;
+				PRODUCT_NAME = git2;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -743,8 +741,6 @@
 		F8DB45361CF7EA290000799F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
-				CLANG_ENABLE_MODULES = NO;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -763,8 +759,8 @@
 				);
 				MODULEMAP_FILE = yalg2fe/module.modulemap;
 				OTHER_LDFLAGS = "-all_load";
-				PRODUCT_BUNDLE_IDENTIFIER = at.phatbl.yalg2fe;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = at.phatbl.git2;
+				PRODUCT_NAME = git2;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -772,12 +768,10 @@
 		F8DB45381CF7EA290000799F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
-				CLANG_ENABLE_MODULES = NO;
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/libgit2/headers";
 				INFOPLIST_FILE = yalg2feTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = at.phatbl.yalg2feTests;
+				PRODUCT_BUNDLE_IDENTIFIER = at.phatbl.git2Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "yalg2feTests/yalg2f3-Bridging-Header.h";
 			};
@@ -786,12 +780,10 @@
 		F8DB45391CF7EA290000799F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
-				CLANG_ENABLE_MODULES = NO;
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/libgit2/headers";
 				INFOPLIST_FILE = yalg2feTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = at.phatbl.yalg2feTests;
+				PRODUCT_BUNDLE_IDENTIFIER = at.phatbl.git2Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "yalg2feTests/yalg2f3-Bridging-Header.h";
 			};
@@ -800,7 +792,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F8DB451A1CF7EA290000799F /* Build configuration list for PBXProject "yalg2fe" */ = {
+		F8DB451A1CF7EA290000799F /* Build configuration list for PBXProject "git2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F8DB45321CF7EA290000799F /* Debug */,
@@ -809,7 +801,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F8DB45341CF7EA290000799F /* Build configuration list for PBXNativeTarget "yalg2fe" */ = {
+		F8DB45341CF7EA290000799F /* Build configuration list for PBXNativeTarget "git2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F8DB45351CF7EA290000799F /* Debug */,
@@ -818,7 +810,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F8DB45371CF7EA290000799F /* Build configuration list for PBXNativeTarget "yalg2feTests" */ = {
+		F8DB45371CF7EA290000799F /* Build configuration list for PBXNativeTarget "git2Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F8DB45381CF7EA290000799F /* Debug */,

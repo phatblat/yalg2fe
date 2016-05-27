@@ -1,5 +1,5 @@
-framework module yalg2fe {
-  umbrella header "yalg2fe.h"
+framework module git2 {
+  umbrella header "git2.h"
 
   header "git2/attr.h"
   header "git2/blob.h"
@@ -67,7 +67,7 @@ framework module yalg2fe {
   header "git2/sys/openssl.h"
   header "git2/sys/stream.h"
   header "git2/trace.h"
-  
+
   export *
   module * { export * }
 }
