@@ -11,6 +11,8 @@
 		F8DB452B1CF7EA290000799F /* yalg2fe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8DB45201CF7EA290000799F /* yalg2fe.framework */; };
 		F8DB45301CF7EA290000799F /* yalg2feTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DB452F1CF7EA290000799F /* yalg2feTests.swift */; };
 		F8DB453E1CF7F1C90000799F /* libgit2-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F8DB453D1CF7F1C90000799F /* libgit2-ios.a */; };
+		F8DB45D71CF7F2A50000799F /* git2.h in Headers */ = {isa = PBXBuildFile; fileRef = F8DB458C1CF7F2A50000799F /* git2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8DB45DA1CF7F3B20000799F /* git2 in Headers */ = {isa = PBXBuildFile; fileRef = F8DB45D81CF7F3A10000799F /* git2 */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +33,8 @@
 		F8DB452F1CF7EA290000799F /* yalg2feTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yalg2feTests.swift; sourceTree = "<group>"; };
 		F8DB45311CF7EA290000799F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8DB453D1CF7F1C90000799F /* libgit2-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libgit2-ios.a"; sourceTree = "<group>"; };
+		F8DB458C1CF7F2A50000799F /* git2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = git2.h; sourceTree = "<group>"; };
+		F8DB45D81CF7F3A10000799F /* git2 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = git2; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,9 +97,19 @@
 		F8DB453C1CF7F1C90000799F /* libgit2 */ = {
 			isa = PBXGroup;
 			children = (
+				F8DB453F1CF7F2A40000799F /* headers */,
 				F8DB453D1CF7F1C90000799F /* libgit2-ios.a */,
 			);
 			path = libgit2;
+			sourceTree = "<group>";
+		};
+		F8DB453F1CF7F2A40000799F /* headers */ = {
+			isa = PBXGroup;
+			children = (
+				F8DB45D81CF7F3A10000799F /* git2 */,
+				F8DB458C1CF7F2A50000799F /* git2.h */,
+			);
+			path = headers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,6 +120,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8DB45241CF7EA290000799F /* yalg2fe.h in Headers */,
+				F8DB45D71CF7F2A50000799F /* git2.h in Headers */,
+				F8DB45DA1CF7F3B20000799F /* git2 in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
