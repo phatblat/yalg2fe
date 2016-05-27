@@ -8,7 +8,7 @@
 
 @testable import yalg2fe
 import XCTest
-//import git2
+import yalg2fe.git2
 
 class yalg2feTests: XCTestCase {
     

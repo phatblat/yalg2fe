@@ -6,7 +6,7 @@
 //  Copyright © 2016 Ben Chatelain. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+@import Foundation;
 
 //! Project version number for yalg2fe.
 FOUNDATION_EXPORT double yalg2feVersionNumber;
@@ -16,4 +16,4 @@ FOUNDATION_EXPORT const unsigned char yalg2feVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <yalg2fe/PublicHeader.h>
 
-
+#import "git2.h"
