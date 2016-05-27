@@ -350,6 +350,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/libgit2",
 				);
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = at.phatbl.yalg2fe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -371,6 +372,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/libgit2",
 				);
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = at.phatbl.yalg2fe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
