@@ -209,6 +209,8 @@
 		F8DB46351CF7F5510000799F /* x509.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509.h; sourceTree = "<group>"; };
 		F8DB46361CF7F5510000799F /* x509_vfy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509_vfy.h; sourceTree = "<group>"; };
 		F8DB46371CF7F5510000799F /* x509v3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509v3.h; sourceTree = "<group>"; };
+		F8DB468C1CF7FD700000799F /* yalg2f3-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "yalg2f3-Bridging-Header.h"; sourceTree = "<group>"; };
+		F8DB468D1CF7FEAC0000799F /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -262,8 +264,9 @@
 		F8DB45221CF7EA290000799F /* yalg2fe */ = {
 			isa = PBXGroup;
 			children = (
-				F8DB45231CF7EA290000799F /* yalg2fe.h */,
 				F8DB45251CF7EA290000799F /* Info.plist */,
+				F8DB468D1CF7FEAC0000799F /* module.modulemap */,
+				F8DB45231CF7EA290000799F /* yalg2fe.h */,
 			);
 			path = yalg2fe;
 			sourceTree = "<group>";
@@ -271,8 +274,9 @@
 		F8DB452E1CF7EA290000799F /* yalg2feTests */ = {
 			isa = PBXGroup;
 			children = (
-				F8DB452F1CF7EA290000799F /* yalg2feTests.swift */,
 				F8DB45311CF7EA290000799F /* Info.plist */,
+				F8DB468C1CF7FD700000799F /* yalg2f3-Bridging-Header.h */,
+				F8DB452F1CF7EA290000799F /* yalg2feTests.swift */,
 			);
 			path = yalg2feTests;
 			sourceTree = "<group>";
@@ -725,6 +729,7 @@
 					"$(PROJECT_DIR)/libgit2",
 					"$(PROJECT_DIR)/External",
 				);
+				MODULEMAP_FILE = yalg2fe/module.modulemap;
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = at.phatbl.yalg2fe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -750,6 +755,7 @@
 					"$(PROJECT_DIR)/libgit2",
 					"$(PROJECT_DIR)/External",
 				);
+				MODULEMAP_FILE = yalg2fe/module.modulemap;
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = at.phatbl.yalg2fe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -764,6 +770,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = at.phatbl.yalg2feTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "yalg2feTests/yalg2f3-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -774,6 +781,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = at.phatbl.yalg2feTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "yalg2feTests/yalg2f3-Bridging-Header.h";
 			};
 			name = Release;
 		};

@@ -6,8 +6,9 @@
 //  Copyright © 2016 Ben Chatelain. All rights reserved.
 //
 
-import XCTest
 @testable import yalg2fe
+import XCTest
+//import git2
 
 class yalg2feTests: XCTestCase {
     

@@ -1,0 +1,6 @@
+framework module yalg2fe {
+  umbrella header "yalg2fe.h"
+
+  export *
+  module * { export * }
+}
