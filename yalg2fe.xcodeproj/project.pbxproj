@@ -10,7 +10,7 @@
 		F8DB45241CF7EA290000799F /* yalg2fe.h in Headers */ = {isa = PBXBuildFile; fileRef = F8DB45231CF7EA290000799F /* yalg2fe.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8DB452B1CF7EA290000799F /* yalg2fe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8DB45201CF7EA290000799F /* yalg2fe.framework */; };
 		F8DB45301CF7EA290000799F /* yalg2feTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DB452F1CF7EA290000799F /* yalg2feTests.swift */; };
-		F8DB453B1CF7EA8C0000799F /* libgit2-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F8DB453A1CF7EA8C0000799F /* libgit2-ios.a */; };
+		F8DB453E1CF7F1C90000799F /* libgit2-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F8DB453D1CF7F1C90000799F /* libgit2-ios.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +30,7 @@
 		F8DB452A1CF7EA290000799F /* yalg2feTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = yalg2feTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8DB452F1CF7EA290000799F /* yalg2feTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yalg2feTests.swift; sourceTree = "<group>"; };
 		F8DB45311CF7EA290000799F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F8DB453A1CF7EA8C0000799F /* libgit2-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libgit2-ios.a"; sourceTree = "<group>"; };
+		F8DB453D1CF7F1C90000799F /* libgit2-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libgit2-ios.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8DB453B1CF7EA8C0000799F /* libgit2-ios.a in Frameworks */,
+				F8DB453E1CF7F1C90000799F /* libgit2-ios.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +59,7 @@
 				F8DB45221CF7EA290000799F /* yalg2fe */,
 				F8DB452E1CF7EA290000799F /* yalg2feTests */,
 				F8DB45211CF7EA290000799F /* Products */,
-				F8DB453A1CF7EA8C0000799F /* libgit2-ios.a */,
+				F8DB453C1CF7F1C90000799F /* libgit2 */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,6 +88,14 @@
 				F8DB45311CF7EA290000799F /* Info.plist */,
 			);
 			path = yalg2feTests;
+			sourceTree = "<group>";
+		};
+		F8DB453C1CF7F1C90000799F /* libgit2 */ = {
+			isa = PBXGroup;
+			children = (
+				F8DB453D1CF7F1C90000799F /* libgit2-ios.a */,
+			);
+			path = libgit2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,6 +332,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/libgit2",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = at.phatbl.yalg2fe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -344,6 +353,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/libgit2",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = at.phatbl.yalg2fe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
