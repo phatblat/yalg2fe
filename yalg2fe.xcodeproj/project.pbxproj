@@ -10,6 +10,7 @@
 		F8DB45241CF7EA290000799F /* yalg2fe.h in Headers */ = {isa = PBXBuildFile; fileRef = F8DB45231CF7EA290000799F /* yalg2fe.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8DB452B1CF7EA290000799F /* yalg2fe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8DB45201CF7EA290000799F /* yalg2fe.framework */; };
 		F8DB45301CF7EA290000799F /* yalg2feTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DB452F1CF7EA290000799F /* yalg2feTests.swift */; };
+		F8DB453B1CF7EA8C0000799F /* libgit2-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F8DB453A1CF7EA8C0000799F /* libgit2-ios.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		F8DB452A1CF7EA290000799F /* yalg2feTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = yalg2feTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8DB452F1CF7EA290000799F /* yalg2feTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yalg2feTests.swift; sourceTree = "<group>"; };
 		F8DB45311CF7EA290000799F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8DB453A1CF7EA8C0000799F /* libgit2-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libgit2-ios.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8DB453B1CF7EA8C0000799F /* libgit2-ios.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +59,7 @@
 				F8DB45221CF7EA290000799F /* yalg2fe */,
 				F8DB452E1CF7EA290000799F /* yalg2feTests */,
 				F8DB45211CF7EA290000799F /* Products */,
+				F8DB453A1CF7EA8C0000799F /* libgit2-ios.a */,
 			);
 			sourceTree = "<group>";
 		};
@@ -317,6 +321,10 @@
 				INFOPLIST_FILE = yalg2fe/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = at.phatbl.yalg2fe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -333,6 +341,10 @@
 				INFOPLIST_FILE = yalg2fe/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = at.phatbl.yalg2fe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -378,6 +390,7 @@
 				F8DB45361CF7EA290000799F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F8DB45371CF7EA290000799F /* Build configuration list for PBXNativeTarget "yalg2feTests" */ = {
 			isa = XCConfigurationList;
@@ -386,6 +399,7 @@
 				F8DB45391CF7EA290000799F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
